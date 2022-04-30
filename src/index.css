@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --primary-color: #1977CC;
+  --secondary-color: #1B3954;
+  --white: #fff;
+  --light-color: #666;
+  --primary-light-color: #a0ccf3;
+  --light-bg-color: #eee;
+  --primary-border: 0.2rem solid var(--primary-color);
+  --secondary-border: 0.2rem solid var(--secondary-color);
+  --primary-box-shadow: 0.5rem 0.5rem 0 rgba(25, 119, 204, 0.2);
+  --secondary-box-shadow: 0.4rem 0.4rem 0 rgba(27, 57, 84, 0.2);
+}
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -57,11 +70,13 @@ section {
   font-size: 1.7rem;
   color: #fff;
   cursor: pointer;
-  background: #0984e3;
+  background: var(--primary-color);
 }
 
 .btn-primary:hover {
-  background: #1B3954;
+  border: var(--primary-border);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 @-webkit-keyframes fadeIn {
