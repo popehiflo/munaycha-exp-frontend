@@ -1,5 +1,5 @@
 .header {
-  background: white;
+  background: var(--white);
   position: fixed;
   top: 0;
   left: 0;
@@ -10,35 +10,35 @@
   padding: 1rem 9%;
 }
 
-.header .logo {
-  background: red;
-}
-
 .header .logo img {
   display: flex;
   min-height: 5rem;
 }
 
-.header .navbar {
-  background: gray;
+.header .nav-wrapper {
+  display:flex;
+  align-items: center;
 }
 
 .header .navbar a {
-  font-size: 1.8rem;
-  color: #1B3954;
-  margin-left: 2rem;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-right: 2rem;
   font-weight: 500;
+  line-height: 4rem;
 }
 
-.header .navbar a:hover {
-  color: #1977CC;
+.header .navbar a:hover, .link-active {
+  color: var(--primary-color);
+  border-bottom: var(--primary-border);
+  font-weight: 600;
 }
 
 .btn-icon {
   font-size: 2.5rem;
   border-radius: 0.5rem;
-  background: #eee;
-  color: #1B3954;
+  background: var(--light-bg-color);
+  color: var(--secondary-color);
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
@@ -127,5 +127,6 @@
   }
   #menu-btn {
     display: initial;
+    margin-left: 1rem;
   }
 }
