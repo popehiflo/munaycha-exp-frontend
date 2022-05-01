@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import logo from './assets/imgs/logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 
 const App = () => {
   AOS.init({
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <Hero />
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

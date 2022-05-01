@@ -1,0 +1,14 @@
+.hero {
+  padding: 0 2rem 1rem 2rem;
+  /* margin: 0 auto; */
+  margin-top: 7.5rem;
+  /* width: 96%; */
+  /* min-height: 80vh; */
+}
+
+.hero-slider {
+  border-radius: 1rem;
+}
+.swiper-wrapper{
+  background: blue;
+}
