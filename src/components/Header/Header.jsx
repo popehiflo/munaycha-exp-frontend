@@ -14,24 +14,22 @@ const Header = () => {
 
   return (
     <header className="header">
-      <a href="/" className="logo">
+      <a href="/" className="logo" data-aos="zoom-in-left" data-aos-delay="150">
         <img src={logoIconGoldText} alt="logo" />
       </a>
       <div className="nav-wrapper">
         <nav className="navbar" ref={navMenu}>
-          {/* <div className="navbar-menu" > */}
-          <a href="/" className="">Nav Item 1</a>
-          <a href="/" className="">Nav Item 2</a>
-          <a href="/" className="">Nav Item 3</a>
-          <a href="/" className="">Nav Item 4</a>
-          <a href="/" className="">Login</a>
-          {/* </div> */}
+          <a href="/" className="" data-aos="zoom-in-left" data-aos-delay="300">Nav Item 1</a>
+          <a href="/" className="" data-aos="zoom-in-left" data-aos-delay="450">Nav Item 2</a>
+          <a href="/" className="" data-aos="zoom-in-left" data-aos-delay="600">Nav Item 3</a>
+          <a href="/" className="" data-aos="zoom-in-left" data-aos-delay="750">Nav Item 4</a>
+          <a href="/" className="" data-aos="zoom-in-left" data-aos-delay="900">Login</a>
         </nav>
-        <button className="menu-button btn-icon" type="button" aria-label="Open Shopping Cart">
+        <button className="btn-icon" type="button" data-aos="zoom-in-left" data-aos-delay="1050" aria-label="Open Shopping Cart">
           <FontAwesomeIcon icon={faShoppingCart} />
         </button>
         <button
-          className="menu-button-ext btn-icon"
+          className="btn-icon"
           type="button"
           onClick={handleClickOpenMenu}
           id="menu-btn"

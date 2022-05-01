@@ -1,5 +1,5 @@
 .header {
-  background: var(--white);
+  background: var(--color-white);
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 9%;
+  z-index: 1000;
 }
 
 .header .logo img {
@@ -22,68 +23,29 @@
 
 .header .navbar a {
   font-size: 2rem;
-  color: var(--secondary-color);
+  color: var(--color-secondary);
   margin-right: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 4rem;
 }
 
 .header .navbar a:hover, .link-active {
-  color: var(--primary-color);
+  color: var(--color-primary);
   border-bottom: var(--primary-border);
-  font-weight: 600;
 }
 
 .btn-icon {
   font-size: 2.5rem;
   border-radius: 0.5rem;
-  background: var(--light-bg-color);
-  color: var(--secondary-color);
+  color: var(--color-secondary);
   padding: 0.5rem 1rem;
   cursor: pointer;
+  background: none;
 }
 
 #menu-btn {
   display: none;
 }
-
-/* .header .navbar {
-  display: flex;
-}
-
-.header .navbar .navbar-menu a {
-  color: #1B3954;
-  font-size: 2rem;
-  margin-left: 2rem;
-  border-radius: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.header .navbar .navbar-menu a:hover {
-  color: white;
-  background: #1B3954;
-}
-
-.header .navbar .navbar-menu a button {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.menu-button-ext {
-  font-size: 2.2rem;
-  border-radius: 0.5rem;
-  background: #eee;
-  padding: 0 1rem;
-  margin-left: 2rem;
-}
-
-.menu-button-ext svg {
-  cursor: pointer;
-} */
 
 @media (max-width: 1200px) {
   .header {
