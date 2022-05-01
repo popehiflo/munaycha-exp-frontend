@@ -74,7 +74,7 @@
     transform: scale(0);
     opacity: 0;
     transform-origin: top right;
-    transition: none;
+    transition: 0.2s ease-in-out;
   }
   .header .navbar.active {
     transform: scale(1);
