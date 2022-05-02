@@ -9,6 +9,22 @@
 .hero-slider {
   border-radius: 1rem;
 }
-.swiper-wrapper{
-  background: blue;
+
+.swiper-slide span {
+  font-weight: bolder;
+  color: var(--color-white);
+  font-size: 3vw;
+  display: block;
+}
+
+.swiper-slide h3 {
+  font-size: 5vw;
+  color: var(--color-white);
+}
+
+.swiper-slide p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: var(--color-white);
 }

@@ -19,11 +19,12 @@ const Hero = () => {
   const slideStyle = {
     margin: '0 auto',
     display: 'flex',
-    alignItems: 'center',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
     flexWrap: 'wrap',
     gap: '2rem',
     minHeight: '92vh',
-    padding: '2rem 0',
+    padding: '2rem',
     cursor: 'hand',
   };
 
@@ -40,30 +41,18 @@ const Hero = () => {
       >
         <div className="swiper-wrapper">
           <SwiperSlide style={{ ...slideImage, ...slideStyle }}>
-            <span>Slide 1</span>
-            <h3>to the unknown</h3>
-            <p>
-              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Necessitatibus
-              Quia Illum Quod Perspiciatis Harum In Possimus? Totam Consequuntur Officia Quia?
-            </p>
+            <span>Let us explore the beauty of</span>
+            <h3>Machu Picchu 1</h3>
             <a href="/" className="btn-primary">Require now</a>
           </SwiperSlide>
           <SwiperSlide style={{ ...slideImage, ...slideStyle }}>
             <span>Slide 2</span>
-            <h3>to the unknown</h3>
-            <p>
-              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Necessitatibus
-              Quia Illum Quod Perspiciatis Harum In Possimus? Totam Consequuntur Officia Quia?
-            </p>
+            <h3>Machu Picchu 2</h3>
             <a href="/" className="btn-primary">Require now</a>
           </SwiperSlide>
           <SwiperSlide style={{ ...slideImage, ...slideStyle }}>
             <span>Slide 3</span>
-            <h3>to the unknown</h3>
-            <p>
-              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Necessitatibus
-              Quia Illum Quod Perspiciatis Harum In Possimus? Totam Consequuntur Officia Quia?
-            </p>
+            <h3>Machu Picchu 3</h3>
             <a href="/" className="btn-primary">Require now</a>
           </SwiperSlide>
         </div>
