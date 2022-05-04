@@ -1,0 +1,10 @@
+.tours {
+  margin-top: 8rem;
+  background: red;
+}
+
+.tours .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr));
+  gap: 1.5rem;
+}
