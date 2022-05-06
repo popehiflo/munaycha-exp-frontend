@@ -2,20 +2,29 @@ import { useRef, useState } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faShoppingCart, faTimes } from '@fortawesome/free-solid-svg-icons';
-import logoIconGoldText from '../../assets/imgs/logo-icon-gold-text.svg';
+import logoIconGoldTextBlue from '../../assets/imgs/logo-icon-gold-text-blue.svg';
 
 const Header = () => {
-  const navMenu = useRef(null);
+  const [colorHeader, setColorHeader] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navMenu = useRef(null);
+  const changeColorHeader = () => {
+    if (window.scrollY > 100) {
+      setColorHeader(true);
+    } else {
+      setColorHeader(false);
+    }
+  };
+  window.addEventListener('scroll', changeColorHeader);
   const handleClickOpenMenu = () => {
     navMenu.current.classList.toggle('active');
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="header">
+    <header className={colorHeader ? 'header scroll-header' : 'header'}>
       <a href="/" className="logo" data-aos="zoom-in-left" data-aos-delay="150">
-        <img src={logoIconGoldText} alt="logo" />
+        <img src={logoIconGoldTextBlue} alt="logo" />
       </a>
       <div className="nav-wrapper">
         <nav className="navbar" ref={navMenu}>
