@@ -5,8 +5,6 @@ import logo from './assets/imgs/logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
-import Hero from './components/Hero/Hero';
-import Tours from './pages/Tours/Tours';
 import Footer from './components/Footer/Footer';
 import Tour from './pages/Tour/Tour';
 
@@ -22,7 +20,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tour/:id" element={<Tour />} />
+        <Route path="/tours-peru/:id/:slug" element={<Tour />} />
         <Route path="/cart" element={<h1 style={{ marginTop: '100px' }}>Cart</h1>} />
         <Route path="/sign-in" element={<h1 style={{ marginTop: '100px' }}>Sign In</h1>} />
         <Route path="/sign-up" element={<h1 style={{ marginTop: '100px' }}>Sign Up</h1>} />

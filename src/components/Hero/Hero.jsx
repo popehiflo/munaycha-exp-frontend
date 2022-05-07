@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination } from 'swiper';
+import { Link } from 'react-router-dom';
 import slideBg from '../../assets/imgs/slide-bg-machupicchu.jpg';
 
 const Hero = () => {
@@ -44,17 +45,17 @@ const Hero = () => {
           <SwiperSlide style={{ ...slideImage, ...slideStyle }}>
             <span>Let us explore the beauty of</span>
             <h3>Machu Picchu 1</h3>
-            <a href="/" className="btn-primary">Require now</a>
+            <Link to="/" className="btn-primary">Require now</Link>
           </SwiperSlide>
           <SwiperSlide style={{ ...slideImage, ...slideStyle }}>
             <span>Slide 2</span>
             <h3>Machu Picchu 2</h3>
-            <a href="/" className="btn-primary">Require now</a>
+            <Link to="/" className="btn-primary">Require now</Link>
           </SwiperSlide>
           <SwiperSlide style={{ ...slideImage, ...slideStyle }}>
             <span>Slide 3</span>
             <h3>Machu Picchu 3</h3>
-            <a href="/" className="btn-primary">Require now</a>
+            <Link to="/" className="btn-primary">Require now</Link>
           </SwiperSlide>
         </div>
       </Swiper>
