@@ -21,16 +21,17 @@ const Hero = () => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
+    justifyContent: 'center',
     flexWrap: 'wrap',
     gap: '2rem',
-    minHeight: '92vh',
-    padding: '2rem',
+    minHeight: '100vh',
+    padding: '3rem',
     cursor: 'hand',
   };
 
   const bucle = true;
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <Swiper
         className="hero-slider"
         modules={[Autoplay, Navigation, Pagination]}
