@@ -1,0 +1,93 @@
+.box-tour {
+  box-shadow: var(--primary-box-shadow);
+  border: var(--border-primary-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box__tour {
+  border-radius: 0.5rem;
+}
+
+.box-tour:hover .image img {
+  transform: scale(1.1);
+}
+
+.box-tour .image {
+  position: relative;
+  height: 30rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  width: 100%;
+}
+
+.box-tour .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-tour .image .image-icons {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.box-tour .content {
+  padding: 0.5rem;
+}
+
+.box-tour .content a h3 {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.box-tour .content .icons {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box-tour .content .icons span {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.box-tour .content .icons .day svg {
+  font-size: 2rem;
+  color: var(--color-yellow);
+}
+.box-tour .content .icons .night svg {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+.box-tour .content .icons .money svg {
+  font-size: 2rem;
+  color: var(--color-green);
+}
+
+.box-tour .content p {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box-tour .box__buttons {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  margin-top: 0;
+}
