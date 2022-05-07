@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -9,57 +10,57 @@ const Footer = () => (
   <section className="footer">
     <div className="box-container">
       <div className="box">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <img src={logoIconGoldText} alt="logo" />
-        </a>
+        </Link>
         <p>Munaycha Explorer Travel Agency, creando experiencias de viaje desde la capital Inca</p>
         <div className="social-media">
-          <a href="/" className="social-link">
+          <Link to="/" className="social-link">
             <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-          <a href="/" className="social-link">
+          </Link>
+          <Link to="/" className="social-link">
             <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a href="/" className="social-link">
+          </Link>
+          <Link to="/" className="social-link">
             <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a href="/" className="social-link">
+          </Link>
+          <Link to="/" className="social-link">
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="box">
         <h3>Quick Links</h3>
-        <a href="/" className="quick-link">
+        <Link to="/" className="quick-link">
           <FontAwesomeIcon icon={faMountain} />
           {' '}
           Nav Item 1
-        </a>
-        <a href="/" className="quick-link">
+        </Link>
+        <Link to="/" className="quick-link">
           <FontAwesomeIcon icon={faMountain} />
           {' '}
           Nav Item 2
-        </a>
-        <a href="/" className="quick-link">
+        </Link>
+        <Link to="/" className="quick-link">
           <FontAwesomeIcon icon={faMountain} />
           {' '}
           Nav Item 3
-        </a>
-        <a href="/" className="quick-link">
+        </Link>
+        <Link to="/" className="quick-link">
           <FontAwesomeIcon icon={faMountainSun} />
           {' '}
           Nav Item 4
-        </a>
-        <a href="/" className="quick-link">
+        </Link>
+        <Link to="/" className="quick-link">
           <FontAwesomeIcon icon={faMountain} />
           {' '}
           Nav Item 5
-        </a>
-        <a href="/" className="quick-link">
+        </Link>
+        <Link to="/" className="quick-link">
           <FontAwesomeIcon icon={faMountain} />
           {' '}
           Nav Item 6
-        </a>
+        </Link>
       </div>
       <div className="box">
         <h3>Contact Us</h3>

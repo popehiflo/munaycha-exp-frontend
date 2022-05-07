@@ -3,11 +3,16 @@
 :root {
   --color-primary: #1977CC;
   --color-secondary: #1B3954;
+  --color-text-white: #fff;
   --color-white: #fff;
   --color-light: #666;
-  --primary-light-color: #a0ccf3;
+  --color-primary-light: #a0ccf3;
   --color-bg-light: #eee;
+  --color-yellow: #FEB73D;
+  --color-green: #14DB8A;
+  --border-radius: 1rem;
   --border-primary: 0.2rem solid var(--color-primary);
+  --border-primary-light: 0.2rem solid var(--color-primary-light);
   --secondary-border: 0.2rem solid var(--color-secondary);
   --primary-box-shadow: 0.5rem 0.5rem 0 rgba(25, 119, 204, 0.2);
   --secondary-box-shadow: 0.4rem 0.4rem 0 rgba(27, 57, 84, 0.2);
@@ -60,13 +65,13 @@ section {
 }
 
 .heading span {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 2rem;
 }
 
 .heading h1 {
   font-size: 4rem;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .btn-primary {
@@ -77,13 +82,31 @@ section {
   background: var(--color-primary);
   color: var(--color-white);
   border: var(--border-primary);
-  border-radius: 4rem;
+  border-radius: 2.3rem;
   cursor: pointer;
 }
 
 .btn-primary:hover {
   background: var(--color-white);
   color: var(--color-primary);
+}
+
+.btn-icon-primary {
+  height: 4.5rem;
+  width: 4.5rem;
+  font-size: 2rem;
+  color: var(--color-white);
+  background: var(--color-primary);
+  border-radius: 50%;
+  border: var(--border-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-icon-primary:hover {
+  color: var(--color-primary);
+  background: var(--color-white);
 }
 
 
