@@ -22,7 +22,7 @@ const TourCard = ({ tour }) => {
           </div>
         </div>
         <div className="content">
-          {/* TODO: mostrar solo 90 caracteres de description en p,con JS */}
+          {/* FIXME: mostrar solo 90 caracteres de description en p,con JS */}
           <Link to={`/tour/${id}`}>
             <h3>{tour.title}</h3>
           </Link>
@@ -44,6 +44,7 @@ const TourCard = ({ tour }) => {
         </div>
       </div>
       <div className="box__buttons">
+        {/* TODO: podria enviar solo el slug (siempre y cuando sea unico) */}
         <Link to={`/tours-peru/${id}/${slug}`} className="btn-primary">
           Saber más del tour
         </Link>
