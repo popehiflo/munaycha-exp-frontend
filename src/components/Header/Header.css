@@ -19,12 +19,13 @@
 .header .nav-wrapper {
   display:flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header .navbar a {
   font-size: 2rem;
   color: var(--color-secondary);
-  margin-right: 2rem;
+  margin-right: 1.8rem;
   font-weight: 500;
   line-height: 4rem;
 }
@@ -40,6 +41,7 @@
   color: var(--color-secondary);
   padding: 0.5rem 1rem;
   cursor: pointer;
+  align-items: center;
   background: none;
 }
 
@@ -94,6 +96,5 @@
   }
   #menu-btn {
     display: initial;
-    margin-left: 1rem;
   }
 }
