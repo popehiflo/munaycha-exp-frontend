@@ -20,10 +20,12 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tours-peru/:id/:slug" element={<Tour />} />
+        <Route path="tours-peru/:id/:slug" element={<Tour />} />
         <Route path="/cart" element={<h1 style={{ marginTop: '100px' }}>Cart</h1>} />
-        <Route path="/sign-in" element={<h1 style={{ marginTop: '100px' }}>Sign In</h1>} />
-        <Route path="/sign-up" element={<h1 style={{ marginTop: '100px' }}>Sign Up</h1>} />
+        <Route path="/account" element={<h1 style={{ marginTop: '100px' }}>Acount</h1>}>
+          <Route path="sign-in" element={<h1 style={{ marginTop: '100px' }}>Sign In</h1>} />
+          <Route path="sign-up" element={<h1 style={{ marginTop: '100px' }}>Sign Up</h1>} />
+        </Route>
         <Route path="/admin-panel" element={<h1 style={{ marginTop: '100px' }}>Admin Panel</h1>} />
         <Route
           path="*"
