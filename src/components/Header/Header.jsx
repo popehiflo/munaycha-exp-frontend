@@ -37,9 +37,9 @@ const Header = () => {
           <NavLink to="account/sign-in" className="">Login</NavLink>
         </nav>
         <NavLink to="account/sign-in" className="btn-primary">Iniciar Sesion</NavLink>
-        <button className="btn-icon" type="button" aria-label="Open Shopping Cart">
+        <NavLink to="cart" className="btn-icon" type="button" aria-label="Open Shopping Cart">
           <FontAwesomeIcon icon={faShoppingCart} />
-        </button>
+        </NavLink>
         <button
           className="btn-icon"
           type="button"

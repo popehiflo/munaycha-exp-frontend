@@ -1,4 +1,5 @@
 .box-tour {
+  background: var(--color-white);
   box-shadow: var(--primary-box-shadow);
   border: var(--border-primary-light);
   border-radius: var(--border-radius);
