@@ -20,6 +20,7 @@
   position: relative;
   height: 30rem;
   border-radius: var(--border-radius);
+  box-shadow: var(--primary-box-shadow);
   overflow: hidden;
   width: 100%;
 }
@@ -43,8 +44,9 @@
 }
 
 .box-tour .content a h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--color-primary);
+  text-transform: uppercase;
 }
 
 .box-tour .content .icons {
@@ -55,20 +57,17 @@
 }
 
 .box-tour .content .icons span {
-  font-size: 1.5rem;
-  color: var(--color-primary);
+  font-size: 1.8rem;
+  color: var(--color-secondary);
 }
 
 .box-tour .content .icons .day svg {
-  font-size: 2rem;
   color: var(--color-yellow);
 }
 .box-tour .content .icons .night svg {
-  font-size: 2rem;
   color: var(--color-secondary);
 }
 .box-tour .content .icons .money svg {
-  font-size: 2rem;
   color: var(--color-green);
 }
 

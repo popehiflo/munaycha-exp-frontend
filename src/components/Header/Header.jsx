@@ -34,8 +34,9 @@ const Header = () => {
           <NavHashLink to="/#about" className="">Nosotros</NavHashLink>
           <NavHashLink to="/#tours" className="">Tours</NavHashLink>
           <NavHashLink to="/" className="">Nav Item 4</NavHashLink>
-          <NavLink to="/sign-in" className="">Login</NavLink>
+          <NavLink to="account/sign-in" className="">Login</NavLink>
         </nav>
+        <NavLink to="account/sign-in" className="btn-primary">Iniciar Sesion</NavLink>
         <button className="btn-icon" type="button" aria-label="Open Shopping Cart">
           <FontAwesomeIcon icon={faShoppingCart} />
         </button>
