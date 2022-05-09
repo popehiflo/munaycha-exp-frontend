@@ -1,0 +1,41 @@
+.como-funciona {
+  margin-top: 1rem;
+}
+
+.como-funciona .box-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+.como-funciona .box-container .box-indicacion {
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  border: var(--border-primary-light);
+}
+
+.como-funciona .box-container .box-indicacion:hover {
+  border: 0.3rem solid var(--color-primary);
+  box-shadow: var(--primary-box-shadow);
+}
+
+.como-funciona .box-container .box-indicacion svg {
+  font-size: 4rem;
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+}
+
+.como-funciona .box-container .box-indicacion h3 {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.como-funciona .box-container .box-indicacion p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  line-height: 2;
+}
